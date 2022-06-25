@@ -1,0 +1,22 @@
+#fixright {
+    position: fixed;
+    width: 22vw;
+    height: 100vh;
+    margin: 3vw;
+    right: 0;
+    top: 0;
+    overflow-y: scroll;
+}
+
+#fixright::-webkit-scrollbar {
+    display: none;
+}
+
+#analytics {
+    position: absolute;
+    top: 70vh;
+    width: 25vw;
+    height: 50vw;
+    right: 0;
+    left: 2vw;
+}

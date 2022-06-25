@@ -1,0 +1,10 @@
+.grid2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 2vw;
+}
+
+.recordbox {
+    background-color: #00b07580;
+    padding: 1vw;
+}

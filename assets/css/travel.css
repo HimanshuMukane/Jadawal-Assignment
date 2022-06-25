@@ -1,0 +1,29 @@
+#travel {
+    top: 0;
+    margin-top: 5vw;
+}
+
+iframe {
+    border-radius: 2vw;
+}
+
+.rightbox {
+    margin-top: -2vw;
+    width: 20vw;
+    height: 34vw;
+    float: right;
+    overflow: scroll;
+    padding: 1vw;
+}
+
+.rightbox::-webkit-scrollbar {
+    display: none;
+}
+
+.boxy {
+    width: auto;
+    padding: 0.5vw;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    margin: 1vw;
+}

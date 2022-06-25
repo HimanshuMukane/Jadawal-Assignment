@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Slideshow gallery</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/agent.css">
+    <link rel="stylesheet" href="assets/css/location.css">
+    <link rel="stylesheet" href="assets/css/analytics.css">
+    <link rel="stylesheet" href="assets/css/details.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/travel.css">
+    <link rel="stylesheet" href="assets/css/price.css">
+    <link rel="stylesheet" href="assets/css/society.css">
+    <link rel="stylesheet" href="assets/css/records.css">
+
+    <!-- Font Awesome -->
+    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css">
+
+    <!-- Bootstrap -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Google Developers -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="assets/js/donut.js"></script>
+    <script type="text/javascript" src="assets/js/bargraph.js"></script>
+</head>
+
+<body translate="no">
+    <section id="slideshow">
+        <div id="gallery">
+            <div class="thumbnail" tabindex="1" data-slide="2">
+                <img src="assets/images/pic2.jpeg" alt="">
+            </div>
+
+            <div class="thumbnail" tabindex="1" data-slide="3">
+                <img src="assets/images/pic3.jpeg" alt="">
+            </div>
+            <div class="thumbnail more" data-slide="1">
+                <img src="assets/images/pic2.jpeg">
+                <h2 class="text"><i class="fal fa-image"></i> 14</h2>
+            </div>
+        </div>
+        <div id="slides">
+            <div class="slide show" data-slide="1">
+                <img src="assets/images/pic1.jpeg" alt="">
+            </div>
+            <div class="slide" data-slide="2">
+                <img src="assets/images/pic2.jpeg" alt="">
+            </div>
+            <div class="slide" data-slide="3">
+                <img src="assets/images/pic3.jpeg" alt="">
+            </div>
+            <div class="slide" data-slide="4">
+                <img src="assets/images/pic4.jpeg" alt="">
+            </div>
+
+            <div class="slide" data-slide="5">
+                <img src="assets/images/pic5.jpeg" alt="">
+            </div>
+
+            <div class="slide" data-slide="6">
+                <img src="assets/images/pic6.jpeg" alt="">
+            </div>
+            <div class="slide" data-slide="7">
+                <img src="assets/images/pic7.jpeg" alt="">
+            </div>
+
+            <div class="slide-btn next">
+                <span>&raquo;</span>
+            </div>
+
+            <div class="slide-btn prev">
+                <span>&laquo;</span>
+            </div>
+        </div>
+
+    </section>
+    <section id="fixright">
+        <section class="card-container">
+            <div class="upper-container">
+                <a href="#" class="dots">
+                    <div class="dot"></div>
+                </a>
+                <div class="image-container">
+                    <img src="assets/images/agent.jpg" />
+                </div>
+            </div>
+
+            <div class="lower-container">
+                <div style="padding-top: 1vw;">
+                    <h5>Adam Magnus</h5>
+                    <h5><i style="color: #EEBA00;" class="fas fa-star"></i> <span style="color: black;">4.9/5</span> <u href="#" style="color: #00B074;">(123)</u></h5>
+                </div>
+                <div style="padding-top: 1vw;">
+                    <div style="background-color: #D1F1E6; padding: 13px; border-radius:5px; margin: 0vw 2vw;">544 *** *** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #00B074;">Show number</a></div>
+                    <p>2 properties</p>
+                </div>
+                <div style="background-color: #F2F5F3;"><br>
+                    <a href="#" class="btn"><i class="fal fa-envelope" aria-hidden="true"></i>&nbsp;Contact Agent</a><br><br>
+                    <p style="cursor: pointer;"> <i class="fal fa-search" aria-hidden="true"></i>&nbsp;Find other Agent</p><br>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="analytics">
+            <p style=" font-size:1.5vw; font-weight: 400;">AnalyticsArea&nbsp;<i class="fal fa-info-circle" aria-hidden="true"></i></p>
+            <p style=" font-size:1vw;">Short-Term Rent Occupancy</p>
+            <h2 style="position:absolute; z-index:1000; top:11vw; left:2.7vw;">64%</h2>
+            <div style="display:flex;">
+                <div id="donut_single" style="width: 200px; height: 200px; margin-left:-2vw;"></div>
+                <div>
+                    <h4 style="margin-top: 5vw;">$5,067</h4>
+                    <h6 style="font-weight: 400;"> Est.monthly profit</h6>
+                </div>
+            </div>
+            <h4>Price History</h4>
+            <div id="bargraph" style="width: 400px; height: 300px; margin-left:-2vw;"></div>
+        </section>
+    </section>
+    <section id="location" class="container">
+        <div>
+            <h1 style="margin-left: 2vw; color:#00B074; font-size:2.5vw;">$400,500</h1>
+            <p style="color:#7D8888; margin-left: 2vw; font-size:1.5vw; margin-top:-1vw;"><s>$450,000</s>&nbsp;<i class="fal fa-info-circle" aria-hidden="true"></i></p>
+        </div>
+        <div>
+            <h1 style="margin-left: 4.5vw; font-size:2.5vw;">565 Broome Str,
+                <span style="color:#7D8888; margin-top:-1vw;">NY</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+                <span style="font-size: 1.7vw;"> <a href="#" data-toggle="modal" data-target="#smallModal"><i class="fal fa-share"></i></a>&emsp;<i class="fas fa-heart" style="color: #E60045;"></i>&emsp;
+                <a href="#" class="dots">
+                    <span class="dot"></span>
+                </a>
+                <span>
+            </h1>
+            <div style="margin-left: 4.5vw;" class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Share</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                </button>
+        </div>
+        <div class="modal-body">
+            <div class="icons">
+                <a href="https://wa.me/?text=text">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:?subject=Link for Selection&body=">
+                    <i class="fal fa-envelope"></i>
+                </a><br><br>
+                <div class="clipboard">
+                    <input onclick="copy()" class="copy-input" value="2" id="copyClipboard" readonly>
+                    <button class="copy-btn" id="copyButton" onclick="copy()"><i class="far fa-copy"></i></button>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <p style="color:#7D8888; margin-left: 4.5vw; font-size:1.5vw; margin-top:-1vw;">Williamsbridge, Bronx</p>
+        </div>
+    </section>
+
+
+    <section style="margin-top:11vw;">
+        <hr class="details" style="border-top: 1px solid #7D8888;"><br>
+        <div class="details grid3">
+            <div>Bedrooms<br>
+                <h3> 4 <i class="far fa-bed"></i></h3><br>
+            </div>
+            <div>Bathrooms<br>
+                <h3> 2 <i class="far fa-toilet"></i></h3>
+            </div>
+            <div>Area<br>
+                <h3> 1,024 ft<sup>2</sup></h3>
+            </div>
+            <div>Built<br>
+                <h3>2017</h3>
+            </div>
+            <div>Parking<br>
+                <h3> 1 Indoor</h3>
+            </div>
+            <div>Area Safety<br>
+            </div>
+        </div>
+        <br><br>
+        <div class="details flex">
+            <h2>Description</h2>
+            &emsp;&emsp;
+            <h5 style="color:#7D8888;">A one-of-a-kind duplex condo boasting multi-level patio and direct East River and Rosevelt Island views, this award-winning 3-bedroom 4.5 bathroom home is a paragon of contemporary city luxury.</h5>
+        </div>
+        <h5 class="details showmore"><a href="" style="color:#00B074;">Show more</a></h5>
+    </section>
+    <div id="content">
+        <section id="nav" class="invisible">
+            <a href="#location" class="navbtn circle"><i class="fal fa-info-circle" aria-hidden="true"></i></a><br>
+            <a href="#travel" class="navbtn"><i class="fal fa-bus"></i></a><br>
+            <a href="#price" class="navbtn"><i class="fal fa-wallet"></i></a><br>
+            <a href="#society" class="navbtn"><i class="fal fa-house"></i></a><br>
+            <a href="#records" class="navbtn"><i class="fal fa-chart-pie"></i></a>
+        </section>
+    </div>
+
+
+    <section id="travel">
+        <div class="details">
+            <h2>Locality near me</h2>
+            <br>
+            <div class="flex"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7542.70578434903!2d72.90290370583536!3d19.04821591434016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5f39a7d77d1%3A0x9ebbdeaea9ec24ae!2sShah%20%26%20Anchor%20Kutchhi%20Engineering%20College!5e0!3m2!1sen!2sin!4v1656183710840!5m2!1sen!2sin"
+                    width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="rightbox">
+                    <div class="boxy">
+                        <h5 style="color:#00B074;">Apollo Spectra Hospitals</h5>
+                        <p><i class="fas fa-map-marker" aria-hidden="true"> </i> Para</p>
+                    </div>
+
+                    <div class="boxy">
+                        <h5 style="color:#00B074;">Radio Bar Chembur</h5>
+                        <p><i class="fas fa-map-marker" aria-hidden="true"> </i> Dr Choithram Gidwani Road</p>
+                    </div>
+
+                    <div class="boxy">
+                        <h5 style="color:#00B074;">Amit Bansode</h5>
+                        <p><i class="fas fa-map-marker" aria-hidden="true"> </i> Tukaram Patil Marg</p>
+                    </div>
+
+                    <div class="boxy">
+                        <h5 style="color:#00B074;">Uttam Da Dhaba</h5>
+                        <p><i class="fas fa-map-marker" aria-hidden="true"> </i> Waman Tukaram Patil Marg</p>
+                    </div>
+
+                    <div class="boxy">
+                        <h5 style="color:#00B074;">Sheetal Family Restaurant</h5>
+                        <p><i class="fas fa-map-marker" aria-hidden="true"> </i> Dr. C. G. Rd </p>
+                    </div>
+                    <div class="boxy">
+                        <h5 style="color:#00B074;">Matka Mahal</h5>
+                        <p><i class="fas fa-map-marker" aria-hidden="true"> </i> WAMAN PATIL INDUSTRIAL ESTATE/p>
+                    </div>
+                    <div class="boxy">
+                        <h5 style="color:#00B074;">Taki Taki - Indo-Chinese Food</h5>
+                        <p><i class="fas fa-map-marker" aria-hidden="true"> </i> Waman Tukaram Patil Marg</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="price" class="details">
+        <br>
+        <br>
+        <br>
+        <h2>Pricing</h2>
+        <h6>₹ 2.95 Crore+ Govt Charges & Tax</h6>
+        <h6 style="color:#00B074;">@ 15,722 per sq.ft.</h6>
+    </section>
+
+    <section id="society" class="details">
+        <br>
+        <br>
+        <br>
+        <h2>Society</h2>
+        <div class="pricegrid4">
+            <div>
+                <h6>
+                    <span style="font-size:1.5vw"><i class="fas fa-puzzle-piece"></i></span> Occupied area<br>
+                    <b style="color:#00B074;">4 acres</b>
+                    <br> (16.19K sq.m.)
+                </h6>
+            </div>
+            <div>
+                <h6>
+                    <span style="font-size:1.5vw"><i class="fas fa-book"></i></span> Project Details<br>
+                    <b style="color:#00B074;">1 Towers, 90 Units</b>
+                    <br> 19 Floors
+                </h6>
+            </div>
+            <div>
+                <h6>
+                    <span style="font-size:1.5vw"><i class="fas fa-cog"></i></span> Configuration<br>
+                    <b style="color:#00B074;">2,3 BHK</b>
+                </h6>
+            </div>
+            <div>
+                <h6>
+                    <span style="font-size:1.5vw"><i class="fas fa-house"></i></span> Property Types<br>
+                    <b style="color:#00B074;">Apartment</b>
+                    <br> View Specifications
+                </h6>
+            </div>
+        </div>
+    </section>
+
+    <section id="records" class="details"><br>
+        <br>
+        <br>
+        <h2>Registry Records</h2>
+        <div class="grid2">
+            <div class="hcd">
+                <div class="recordbox">
+                    <div><i class="far fa-file"> </i> 7 recent transactions in this project </div>
+                    <div>in last 3 years</div>
+                </div>
+            </div>
+            <div class="hcd">
+                <div class="recordbox">
+                    <div><b>$</b> Avg. transaction rates are </div>
+                    <div>Rs. 17332/sq.ft.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://unpkg.com/popper.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/copy.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+</body>
+
+</html>

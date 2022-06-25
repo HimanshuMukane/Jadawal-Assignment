@@ -1,0 +1,45 @@
+.navbtn {
+    padding: 12px 15px;
+    margin: 10px 7px;
+    border-radius: 500px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 3.5;
+}
+
+.navbtn i {
+    color: black;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 500px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.circle i {
+    color: #00B074;
+}
+
+#nav {
+    padding-right: 20px;
+    position: fixed;
+    margin-top: -50vw;
+    margin-left: 7vw;
+    border-radius: 500px;
+    float: right;
+    width: 60px;
+    background-color: #e6f0e5;
+}
+
+#content {
+    position: relative;
+}
+
+.invisible {
+    display: none;
+}
