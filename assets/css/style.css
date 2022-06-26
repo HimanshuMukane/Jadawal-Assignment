@@ -504,3 +504,49 @@ iframe {
     border-radius: 10px;
     margin: 1vw;
 }
+
+
+/* Heart */
+
+svg {
+    cursor: pointer;
+    width: 60px;
+    margin-left: -25px;
+    margin-top: -10px;
+}
+
+svg #heart {
+    transform-origin: center;
+    animation: animateHeartOut 0.3s linear forwards;
+}
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart 0.3s linear forwards 0.25s;
+}
+
+@keyframes animateHeart {
+    0% {
+        transform: scale(0.2);
+    }
+    40% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animateHeartOut {
+    0% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
