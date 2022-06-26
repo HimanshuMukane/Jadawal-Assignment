@@ -1,6 +1,6 @@
 # Jadawal-Assignment
  
-Detailed Features:
+Detailed Features:<br />
 ● Display of the property: A proper display containing images of the property up for rental purpose from different views.<br />
 ● Display for the property details: A section that contains the details of the mentioned property like:<br />
 o Name of the property (Along with its address and current price )<br />
