@@ -1,0 +1,51 @@
+:root {
+    --shownumbera: #00B074;
+    --black: #000000;
+    --white: #ffffff;
+    --green: #00B074;
+    --grey: #7D8888;
+}
+
+.lower-container h5 i {
+    color: #EEBA00;
+}
+
+.lower-container h5 span {
+    color: var(--black);
+}
+
+.shownumber {
+    background-color: #dbece7;
+}
+
+.shownumber a {
+    color: var(--shownumbera);
+}
+
+.lowercard {
+    background-color: #F2F5F3;
+}
+
+.green {
+    color: var(--green);
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.white {
+    color: var(--white);
+}
+
+.black {
+    color: var(--black);
+}
+
+.dot {
+    background-color: #000000;
+}
+
+.fa-share {
+    color: #000;
+}
