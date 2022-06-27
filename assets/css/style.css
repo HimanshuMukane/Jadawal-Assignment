@@ -285,6 +285,10 @@ p {
     left: 2vw;
 }
 
+#donut_single {
+    overflow: visible;
+}
+
 
 /* Details */
 
@@ -508,14 +512,14 @@ iframe {
 
 /* Heart */
 
-svg {
+.svg {
     cursor: pointer;
     width: 60px;
     margin-left: -25px;
     margin-top: -10px;
 }
 
-svg #heart {
+#heart {
     transform-origin: center;
     animation: animateHeartOut 0.3s linear forwards;
 }
